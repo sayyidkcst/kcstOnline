@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Your Certificates</title>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script>
+  <script src="firebaseConfig.js"></script>
+  <script src="script.js"></script>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #fafafa;
+      padding: 20px;
+    }
+
+    #logoutBtn {
+      background: #d9534f;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      float: right;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    img {
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="logoutBtn">Logout</button>
+  <h2>Your Certificates</h2>
+
+  <div id="certificateList"></div>
+
+</body>
+</html>
